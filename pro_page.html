@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Viaje de Momentos</title>
+    <title>Un Viaje de Momentos Especiales</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -67,29 +67,29 @@
         }
 
         function positiveResponse() {
-            alert('¡Sabía que dirías que sí! 😊 Prometo hacerte feliz, a pesar de la distancia.');
+            alert('Sabía que dirías que sí! 😊 Aquí comienza nuestro siguiente capítulo.');
         }
 
-        function unsureResponse() {
-            alert('No hay presión, pero estoy aquí, esperando que la respuesta sea la que quiero 😜');
+        function funnyResponse1() {
+            alert('¿De verdad lo dudaste? 😜 Me parece que ya sabías la respuesta.');
         }
 
-        function funnyResponse() {
-            alert('Oh, parece que necesitas pensarlo... 🤔 ¡Tómate tu tiempo, aunque ya te extraño más!');
+        function funnyResponse2() {
+            alert('Si esto fuera un examen de opciones, marcaría “Sí” y pondría un corazón al lado ❤');
+        }
+
+        function playfulResponse() {
+            alert('Esa es una respuesta con truco… pero la acepto 😉');
         }
 
         function friendZoneResponse() {
-            alert('Ouch... eso duele 😅 Pero no me rindo tan fácil.');
-        }
-
-        function destinyResponse() {
-            alert('Es como si el destino nos estuviera dando una segunda oportunidad. 🥰');
+            alert('Ouch, eso dolió 😅 Pero seguiré siendo optimista, porque me caes demasiado bien.');
         }
     </script>
 </head>
 <body>
-    <h1>Un Viaje de Momentos</h1>
-    <p id="initialText">Te he preparado algo especial... toca el botón cuando estés lista para comenzar nuestro viaje.</p>
+    <h1>Un Viaje de Momentos Especiales</h1>
+    <p id="initialText">Te preparé algo que creo que te gustará… toca el botón cuando estés lista para comenzar.</p>
     
     <button onclick="showMemory1()" style="background-color: #4a90e2; color: white; padding: 10px 25px; border: none; font-size: 18px; border-radius: 5px; cursor: pointer; margin-top: 20px;">
         Comenzar el viaje
@@ -97,30 +97,31 @@
 
     <div id="memory1" style="display: none;">
         <p class="question">📅 7 de noviembre</p>
-        <p>Esa fue la fecha de nuestro primer beso. Ese momento fue increíble, y desde entonces, no dejo de pensar en ti. Tocaste algo en mí que nunca había sentido antes.</p>
+        <p>Ese día fue el primer beso. ¿Te acuerdas? Fue tan inesperado y perfecto que no dejo de pensar en eso. Parece que ese día marcó el inicio de algo grande.</p>
         <button onclick="showMemory2()">Siguiente</button>
     </div>
 
     <div id="memory2" style="display: none;">
         <p class="question">📍 La Distancia</p>
-        <p>Aunque estemos lejos ahora, siento que cada día nos acercamos más. Te extraño tanto que cada mensaje, cada llamada se siente como una pequeña reunión entre nosotros.</p>
+        <p>Aunque estamos lejos, siento que cada día nos conectamos más. Y, bueno, no voy a mentir… te extraño bastante. Cada llamada, cada mensaje hace que me sienta un poquito más cerca de ti.</p>
         <button onclick="showMemory3()">Siguiente</button>
     </div>
 
     <div id="memory3" style="display: none;">
-        <p class="question">⏳ Tiempo Incompleto</p>
-        <p>No tuve tiempo de hacerte una pregunta importante cuando estábamos juntos, así que aquí estoy, a pesar de la distancia, queriendo hacerla ahora.</p>
-        <button onclick="revealQuestion()">Hazme la pregunta</button>
+        <p class="question">🤭 Algo que aún no te he dicho...</p>
+        <p>Aunque en nuestra última despedida no tuve tiempo de decírtelo, quiero preguntarte algo importante. Sé que esto puede sonar un poco directo, pero...</p>
+        <button onclick="revealQuestion()">Dímelo ya</button>
     </div>
 
     <div id="questionText" style="display: none;">
         <p class="question">¿Quieres ser mi novia?</p>
+        <p>Responde con sinceridad y sin presiones… pero quiero saber si te gustaría dar este paso conmigo.</p>
         <div class="buttons">
             <button onclick="positiveResponse()">Sí, claro que sí</button>
-            <button onclick="unsureResponse()">Tal vez...</button>
-            <button onclick="funnyResponse()">Mmm... no estoy segura</button>
-            <button onclick="friendZoneResponse()">Solo como amigos</button>
-            <button onclick="destinyResponse()">Esto es cosa del destino ❤</button>
+            <button onclick="funnyResponse1()">No estaba segura, pero ahora… ¡Sí!</button>
+            <button onclick="funnyResponse2()">¿Por qué no? ¡Me encantan los riesgos! 😜</button>
+            <button onclick="playfulResponse()">Depende… ¿Vas a invitarme a cenar primero? 😆</button>
+            <button onclick="friendZoneResponse()">Solo como amigos, pero con cariño</button>
         </div>
     </div>
 </body>
